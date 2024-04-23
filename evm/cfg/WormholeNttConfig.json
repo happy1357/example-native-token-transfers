@@ -1,0 +1,14 @@
+{
+    "contracts": [
+        {
+            "chainId": 84532,
+            "decimals": 18,
+            "inboundLimit": 0,
+            "isEvmChain": true,
+            "isWormholeRelayingEnabled": true,
+            "isSpecialRelayingEnabled": false,
+            "nttManager": "0x000000000000000000000000f641f59bc39db712907758ffa588e3fc1250cab5",
+            "wormholeTransceiver": "0x000000000000000000000000719d85e65b4c141a0760e7650b7eda505445b12c"
+        }
+    ]
+}
