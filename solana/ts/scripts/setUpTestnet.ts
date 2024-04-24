@@ -15,7 +15,7 @@ async function main() {
     }
 
     const connection = new Connection("https://api.devnet.solana.com", "confirmed");
-    const ntt = new NTT(connection, { nttId: "nttiK1SepaQt6sZ4WGW5whvc9tEnGXGxuKeptcQPCcS", wormholeId: "3u8hJUVTA4jH1wYAyUur7FFZVQ8H635K3tSHHF4ssjQ5"});
+    const ntt = new NTT(connection, { nttId: "ntPYP7pNbqtiWnLVDAS65W3aMkogSoz5G7uznsPzRQd", wormholeId: "3u8hJUVTA4jH1wYAyUur7FFZVQ8H635K3tSHHF4ssjQ5"});
 
     const payer = Keypair.fromSecretKey(Buffer.from(process.env.SOLANA_PRIVATE_KEY, "base64"));
     const owner = payer;

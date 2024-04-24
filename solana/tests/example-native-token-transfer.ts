@@ -31,7 +31,8 @@ export const GUARDIAN_KEY =
 describe("example-native-token-transfers", () => {
   const payerSecretKey = Uint8Array.from(
     JSON.parse(
-      fs.readFileSync(`${__dirname}/../keys/test.json`, { encoding: "utf-8" })
+      // fs.readFileSync(`${__dirname}/../keys/test.json`, { encoding: "utf-8" })
+      fs.readFileSync(`/home/user/.config/solana/id.json`, { encoding: "utf-8" })
     )
   );
   const payer = anchor.web3.Keypair.fromSecretKey(payerSecretKey);
@@ -42,7 +43,7 @@ describe("example-native-token-transfers", () => {
     "confirmed"
   );
   const ntt = new NTT(connection, {
-    nttId: "nttiK1SepaQt6sZ4WGW5whvc9tEnGXGxuKeptcQPCcS",
+    nttId: "ntPYP7pNbqtiWnLVDAS65W3aMkogSoz5G7uznsPzRQd",
     wormholeId: "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth",
   });
   const user = anchor.web3.Keypair.generate();

@@ -7,19 +7,20 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-example_native_token_transfers = "nttiK1SepaQt6sZ4WGW5whvc9tEnGXGxuKeptcQPCcS"
-wormhole_governance = "wgvEiKVzX9yyEoh41jZAdC6JqGUTS4CFXbFGBV5TKdZ"
-ntt_quoter = "9jFBLvMZZERVmeY4tbq5MejbXRE18paGEuoB6xVJZgGe"
+example_native_token_transfers = "ntPYP7pNbqtiWnLVDAS65W3aMkogSoz5G7uznsPzRQd"
+wormhole_governance = "wgsxzHU7iyP6QwfHw6ZkKYt8dxfRGowQCDxDR2La2sw"
+ntt_quoter = "nqha8CGnQjEYSqbGpg8XvAtmAKEW4qy3Avf6HL6Rfrq"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "keys/test.json"
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "./scripts/run-ts-tests"
+astro = "./scripts/run-ts-astro"
 
 [test]
 startup_wait = 5000

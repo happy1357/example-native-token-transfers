@@ -59,7 +59,7 @@ yargs(hideBin(process.argv))
                         const keypair = argv.keypair;
                         const dir = argv.dir;
                         const objectFile = "example_native_token_transfers.so";
-                        const programId = "nttiK1SepaQt6sZ4WGW5whvc9tEnGXGxuKeptcQPCcS";
+                        const programId = "ntPYP7pNbqtiWnLVDAS65W3aMkogSoz5G7uznsPzRQd";
                         assertNetwork(network);
                         await $`cargo build-sbf --manifest-path=${dir}/Cargo.toml --no-default-features --features "${cargoNetworkFeature(network)}"`
                         await $`solana program deploy --program-id ${programId} ${dir}/target/deploy/${objectFile} --keypair ${keypair} -u ${solanaMoniker(network)}`
